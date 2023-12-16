@@ -1,0 +1,119 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(22, 72, 99);
+}
+
+header {
+    position: relative;
+    background-color: rgb(22, 72, 99);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-title {
+    font-weight: 700;
+}
+
+.exit-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(22, 72, 99);
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+main {
+    max-width: 330px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom right, rgb(66, 125, 157), rgb(155, 190, 200), rgb(22, 72, 99));
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.task-form label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.task-form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(22, 72, 99);
+    border-radius: 20px;
+    width: 300px;
+
+}
+
+.task-form button {
+    background-color: rgb(22, 72, 99);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100px;
+    margin: auto;
+}
+
+.task-list {
+    display: grid;
+    gap: 15px;
+}
+
+.card-info {
+    background-color: rgba(66, 125, 157, 0.46);
+    border: 1px solid rgb(155, 190, 200);
+    padding: 15px;
+    border-radius: 20px;
+    height: 150px; 
+    overflow: hidden; 
+}
+
+.card-info h5 {
+    font-size: 18px; 
+    text-decoration: none;
+    color: white;
+}
+
+.card-info button {
+    background-color: rgb(22, 72, 99);
+    color: #fff;
+    border: 20px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+section {
+    text-align: center;
+    margin-top: 20px;
+}
+section  label{
+    color: white;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid rgb(22, 72, 99);
+    background-color: rgb(221, 242, 253);
+    color: rgb(22, 72, 99);
+}

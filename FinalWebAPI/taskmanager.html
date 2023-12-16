@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/taskmanger.css">
+    <title>Task Management</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Task Management</h1>
+        <button id="exit" class="exit-button"><i class="fas fa-sign-out-alt"></i> Exit</button>
+    </header>
+
+    <section>
+        <label for="filter">Filter Tasks:</label>
+        <select id="filter">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="incomplete">Incompleted</option>
+        </select>
+    </section>
+
+    <main>
+        <div class="task-form">
+            <label addTitle>Task Title:</label>
+            <input type="text" id="addTitle" placeholder="Enter task title" />
+            <label for="addTxt">Task Description:</label>
+            <input type="text" id="addTxt" placeholder="Enter task description" />
+            <button id="addBtn"><i class="fas fa-plus"></i>Add Task</button>
+        </div>
+        <div id="notes" class="task-list"></div>
+    </main>
+    <script src="/scripts/taskmanager.js"></script>
+</body>
+</html>
